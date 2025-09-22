@@ -1,5 +1,7 @@
 # Git and GitHub Workflow Project
 
+ Git and Github project workflow with detailed explanation
+
 This project is designed to provide a clear and practical understanding of how to use **Git** for version control and **GitHub** for remote collaboration.  
 It walks through the complete workflow — from setting up a repository to managing branches, ignoring unnecessary files, and applying an open-source license.  
 
@@ -63,3 +65,30 @@ This project follows a typical Git and GitHub workflow:
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute it with proper credit.  
 See the [LICENSE](LICENSE) file for full details.
+=======
+This project demonstrates the Git and GitHub workflow for version control and collaboration.  
+It explains how to:
+- Initialize and manage repositories
+- Commit and push changes
+- Use branches for new features
+- Work with `.gitignore` and licenses
+## 🌿 Branching Strategy
+
+In this project, we are using the **GitHub Flow** workflow.
+
+- The `main` branch is always stable.  
+- For every new change, we create a **feature branch**.  
+- After finishing the work, we push the branch to GitHub.  
+- Then we create a **Pull Request (PR)** and merge it into `main`.  
+
+### Example:
+```bash
+# Create a new branch
+git checkout -b feature-update-readme
+
+# Make changes, then save them
+git add README.md
+git commit -m "Update README with branching strategy"
+
+# Push branch to GitHub
+git push origin feature-update-readme
